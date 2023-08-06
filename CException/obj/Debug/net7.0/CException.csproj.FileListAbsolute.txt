@@ -1,0 +1,15 @@
+C:\Users\COMPUMARTS\source\repos\CException\CException\bin\Debug\net7.0\CException.exe
+C:\Users\COMPUMARTS\source\repos\CException\CException\bin\Debug\net7.0\CException.deps.json
+C:\Users\COMPUMARTS\source\repos\CException\CException\bin\Debug\net7.0\CException.runtimeconfig.json
+C:\Users\COMPUMARTS\source\repos\CException\CException\bin\Debug\net7.0\CException.dll
+C:\Users\COMPUMARTS\source\repos\CException\CException\bin\Debug\net7.0\CException.pdb
+C:\Users\COMPUMARTS\source\repos\CException\CException\obj\Debug\net7.0\CException.csproj.AssemblyReference.cache
+C:\Users\COMPUMARTS\source\repos\CException\CException\obj\Debug\net7.0\CException.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\COMPUMARTS\source\repos\CException\CException\obj\Debug\net7.0\CException.AssemblyInfoInputs.cache
+C:\Users\COMPUMARTS\source\repos\CException\CException\obj\Debug\net7.0\CException.AssemblyInfo.cs
+C:\Users\COMPUMARTS\source\repos\CException\CException\obj\Debug\net7.0\CException.csproj.CoreCompileInputs.cache
+C:\Users\COMPUMARTS\source\repos\CException\CException\obj\Debug\net7.0\CException.dll
+C:\Users\COMPUMARTS\source\repos\CException\CException\obj\Debug\net7.0\refint\CException.dll
+C:\Users\COMPUMARTS\source\repos\CException\CException\obj\Debug\net7.0\CException.pdb
+C:\Users\COMPUMARTS\source\repos\CException\CException\obj\Debug\net7.0\CException.genruntimeconfig.cache
+C:\Users\COMPUMARTS\source\repos\CException\CException\obj\Debug\net7.0\ref\CException.dll
