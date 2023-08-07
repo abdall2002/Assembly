@@ -21,6 +21,7 @@ namespace CException
             }
             catch (AccidentException ex)
             {
+                // لو مكتبناش حاجه هنا هيبقى swallow Exception;
                 Console.WriteLine($"There was an accident at {ex.Location} preventing us from delivering you parcel: {ex.Message}");
                 delivery.DelivaryStatus = DeliveryStatus.UNKNOWN;
             }
