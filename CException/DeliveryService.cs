@@ -19,6 +19,11 @@ namespace CException
                 Transit(delivery);
                 Deliver(delivery);
             }
+            catch (AccidentException ex)
+            {
+                Console.WriteLine($"There was an accident at {ex.Location} preventing us from delivering you parcel: {ex.Message}");
+                delivery.DelivaryStatus = DeliveryStatus.UNKNOWN;
+            }
             catch (Exception ex) 
             {
                 Console.WriteLine($"Deliver Fails due to: {ex.Message}");
@@ -34,7 +39,7 @@ namespace CException
         private void Process(Delivery delivery)
         {
             FakeIt("Processing");
-            if (random.Next(1, 5) == 1)
+            if (random.Next(1, 10) == 1)
             {
                 throw new InvalidOperationException("unable to process the item");
             }
@@ -43,7 +48,7 @@ namespace CException
         private void Ship(Delivery delivery)
         {
             FakeIt("Shipping");
-            if (random.Next(1, 5) == 1)
+            if (random.Next(1, 10) == 1)
             {
                 throw new InvalidOperationException("Parcel is damaged during the loading the process");
             }
@@ -52,11 +57,19 @@ namespace CException
         private void Transit(Delivery delivery)
         {
             FakeIt("On Its way");
+            if (random.Next(1, 5) == 1)
+            {
+                throw new AccidentException("354 some another street", "ACCIDENT !!!");
+            }
             delivery.DelivaryStatus = DeliveryStatus.INTRANSIT;
         }
         private void Deliver(Delivery delivery)
         {
             FakeIt("Delivering");
+            if (random.Next(1, 5) == 1)
+            {
+                throw new InvalidAddressExcption($"'{delivery.Address}' is invalid !!!");
+            }
             delivery.DelivaryStatus = DeliveryStatus.DELIVARED;
         }
         private void FakeIt(string title)
