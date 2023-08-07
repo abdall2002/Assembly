@@ -12,10 +12,23 @@ namespace CException
 
         public void Start(Delivery delivery)
         {
-            Process(delivery);
-            Ship(delivery);
-            Transit(delivery);
-            Deliver(delivery);
+            try 
+            {
+                Process(delivery);
+                Ship(delivery);
+                Transit(delivery);
+                Deliver(delivery);
+            }
+            catch (Exception ex) 
+            {
+                Console.WriteLine($"Deliver Fails due to: {ex.Message}");
+                delivery.DelivaryStatus = DeliveryStatus.UNKNOWN;
+            }
+            finally 
+            {
+                Console.WriteLine("End");
+            }
+            
 
         }
         private void Process(Delivery delivery)
