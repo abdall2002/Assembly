@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\COMPUMARTS\\source\\repos\\CException\\CException\\CException.csproj",
+      "projectUniqueName": "C:\\Users\\COMPUMARTS\\Source\\Repos\\Exceptipn\\CException\\CException.csproj",
       "projectName": "CException",
-      "projectPath": "C:\\Users\\COMPUMARTS\\source\\repos\\CException\\CException\\CException.csproj",
+      "projectPath": "C:\\Users\\COMPUMARTS\\Source\\Repos\\Exceptipn\\CException\\CException.csproj",
       "packagesPath": "C:\\Users\\COMPUMARTS\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\COMPUMARTS\\source\\repos\\CException\\CException\\obj\\",
+      "outputPath": "C:\\Users\\COMPUMARTS\\Source\\Repos\\Exceptipn\\CException\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\COMPUMARTS\\AppData\\Roaming\\NuGet\\NuGet.Config",
