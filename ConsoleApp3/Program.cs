@@ -111,3 +111,21 @@ Console.WriteLine($"FullName: {t1.FullName}");     // -> print System.DateTime  
 Console.WriteLine($"Namespace: {t1.Namespace}");   // -> print System              // Namespace
 Console.WriteLine($"Name: {t1.Name}");             // -> print DateTime            // TypeName
 Console.WriteLine($"BaseType: {t1.BaseType}");     // -> print System.ValueType    // Namespace.ValueType
+Console.WriteLine($"IsPublic: {t1.IsPublic}");     // -> print True
+
+Type t3 = typeof(int[,]);
+Console.WriteLine($"T3 Type: {t3.Name}");     // -> print "int32[,]"
+
+var nestedTypes = typeof(Employee).GetNestedTypes();
+for (int i = 0; i < nestedTypes.Length; i++)
+{
+    Console.WriteLine(nestedTypes[i]);
+}
+
+
+
+
+
+
+
+
