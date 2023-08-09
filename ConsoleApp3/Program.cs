@@ -88,13 +88,26 @@ using System.Reflection;
 
 //Demo.Trace();
 
-var type = typeof(Program);
-var assembly = type.Assembly;
-Console.WriteLine($"FullName: {assembly.FullName}");  // -> print ConsoleApp3, Version = 1.0.0.0, Culture = neutral, PublicKeyToken = null
-Console.WriteLine($"Location: {assembly.Location}");  // -> print C:\Users\COMPUMARTS\source\repos\ConsoleApp3\ConsoleApp3\bin\Debug\net7.0\ConsoleApp3.dll
-var assemblyName = assembly.GetName();
-Console.WriteLine($"Name: {assemblyName.Name}");          // -> print "ConsoleApp3"
-Console.WriteLine($"Version: {assemblyName.Version}");    // -> print "1.0.0.0"
-Console.WriteLine($"Total Key Tokens length: {assemblyName.GetPublicKeyToken().Length}");   // -> print 0, return array of bytes
-Console.WriteLine($"Code: {assemblyName.CodeBase}");      // -> print file:///C:/Users/COMPUMARTS/source/repos/ConsoleApp3/ConsoleApp3/bin/Debug/net7.0/ConsoleApp3.dll
-Console.WriteLine($"DateTime Assembly Name: {typeof(DateTime).Assembly.GetName().Name}");   // -> print System.Private.CoreLib
+//var type = typeof(Program);
+//var assembly = type.Assembly;
+//Console.WriteLine($"FullName: {assembly.FullName}");  // -> print ConsoleApp3, Version = 1.0.0.0, Culture = neutral, PublicKeyToken = null
+//Console.WriteLine($"Location: {assembly.Location}");  // -> print C:\Users\COMPUMARTS\source\repos\ConsoleApp3\ConsoleApp3\bin\Debug\net7.0\ConsoleApp3.dll
+//var assemblyName = assembly.GetName();
+//Console.WriteLine($"Name: {assemblyName.Name}");          // -> print "ConsoleApp3"
+//Console.WriteLine($"Version: {assemblyName.Version}");    // -> print "1.0.0.0"
+//Console.WriteLine($"Total Key Tokens length: {assemblyName.GetPublicKeyToken().Length}");   // -> print 0, return array of bytes
+//Console.WriteLine($"Code: {assemblyName.CodeBase}");      // -> print file:///C:/Users/COMPUMARTS/source/repos/ConsoleApp3/ConsoleApp3/bin/Debug/net7.0/ConsoleApp3.dll
+//Console.WriteLine($"DateTime Assembly Name: {typeof(DateTime).Assembly.GetName().Name}");   // -> print System.Private.CoreLib
+
+/////////////////////////////////////////////////////////////////////
+
+/* Reflection */
+
+Type t1 = DateTime.Now.GetType();   // -> at runtime
+Console.WriteLine(t1);
+Type t2  = typeof(DateTime);        // -> at compile time
+Console.WriteLine(t2);
+Console.WriteLine($"FullName: {t1.FullName}");     // -> print System.DateTime     // Namespace.TypeName
+Console.WriteLine($"Namespace: {t1.Namespace}");   // -> print System              // Namespace
+Console.WriteLine($"Name: {t1.Name}");             // -> print DateTime            // TypeName
+Console.WriteLine($"BaseType: {t1.BaseType}");     // -> print System.ValueType    // Namespace.ValueType
