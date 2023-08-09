@@ -92,5 +92,9 @@ var type = typeof(Program);
 var assembly = type.Assembly;
 Console.WriteLine($"FullName: {assembly.FullName}");  // -> print ConsoleApp3, Version = 1.0.0.0, Culture = neutral, PublicKeyToken = null
 Console.WriteLine($"Location: {assembly.Location}");  // -> print C:\Users\COMPUMARTS\source\repos\ConsoleApp3\ConsoleApp3\bin\Debug\net7.0\ConsoleApp3.dll
-                                       
+var assemblyName = assembly.GetName();
+Console.WriteLine($"Name: {assemblyName.Name}");          // -> print "ConsoleApp3"
+Console.WriteLine($"Version: {assemblyName.Version}");    // -> print "1.0.0.0"
+Console.WriteLine($"Total Key Tokens length: {assemblyName.GetPublicKeyToken().Length}");   // -> print 0, return array of bytes
+
 
