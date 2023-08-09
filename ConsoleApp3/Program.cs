@@ -122,7 +122,12 @@ for (int i = 0; i < nestedTypes.Length; i++)
     Console.WriteLine(nestedTypes[i]);
 }
 
-
+var t4 = typeof(int);
+var interfaces = t4.GetInterfaces();
+for (int i = 0;i < interfaces.Length; i++)      // -> print all interfaces;
+{
+    Console.WriteLine(interfaces[i]);
+}
 
 
 
