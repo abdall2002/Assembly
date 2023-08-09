@@ -1,0 +1,12 @@
+C:\Users\COMPUMARTS\source\repos\ConsoleApp3\DempLib\bin\Debug\net7.0\DempLib.deps.json
+C:\Users\COMPUMARTS\source\repos\ConsoleApp3\DempLib\bin\Debug\net7.0\DempLib.dll
+C:\Users\COMPUMARTS\source\repos\ConsoleApp3\DempLib\bin\Debug\net7.0\DempLib.pdb
+C:\Users\COMPUMARTS\source\repos\ConsoleApp3\DempLib\obj\Debug\net7.0\DempLib.csproj.AssemblyReference.cache
+C:\Users\COMPUMARTS\source\repos\ConsoleApp3\DempLib\obj\Debug\net7.0\DempLib.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\COMPUMARTS\source\repos\ConsoleApp3\DempLib\obj\Debug\net7.0\DempLib.AssemblyInfoInputs.cache
+C:\Users\COMPUMARTS\source\repos\ConsoleApp3\DempLib\obj\Debug\net7.0\DempLib.AssemblyInfo.cs
+C:\Users\COMPUMARTS\source\repos\ConsoleApp3\DempLib\obj\Debug\net7.0\DempLib.csproj.CoreCompileInputs.cache
+C:\Users\COMPUMARTS\source\repos\ConsoleApp3\DempLib\obj\Debug\net7.0\DempLib.dll
+C:\Users\COMPUMARTS\source\repos\ConsoleApp3\DempLib\obj\Debug\net7.0\refint\DempLib.dll
+C:\Users\COMPUMARTS\source\repos\ConsoleApp3\DempLib\obj\Debug\net7.0\DempLib.pdb
+C:\Users\COMPUMARTS\source\repos\ConsoleApp3\DempLib\obj\Debug\net7.0\ref\DempLib.dll
