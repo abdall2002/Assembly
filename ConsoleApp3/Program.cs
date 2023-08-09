@@ -86,4 +86,11 @@ using System.Reflection;
 //Console.WriteLine(assembly.FullName);       // -> print ConsoleApp3, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
 //Console.WriteLine(typeof(DateTime).Assembly.FullName);   // -> print System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e
 
-Demo.Trace();
+//Demo.Trace();
+
+var type = typeof(Program);
+var assembly = type.Assembly;
+Console.WriteLine($"FullName: {assembly.FullName}");  // -> print ConsoleApp3, Version = 1.0.0.0, Culture = neutral, PublicKeyToken = null
+Console.WriteLine($"Location: {assembly.Location}");  // -> print C:\Users\COMPUMARTS\source\repos\ConsoleApp3\ConsoleApp3\bin\Debug\net7.0\ConsoleApp3.dll
+                                       
+
