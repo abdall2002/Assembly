@@ -103,31 +103,37 @@ using System.Reflection;
 
 /* Reflection */
 
-Type t1 = DateTime.Now.GetType();   // -> at runtime
-Console.WriteLine(t1);
-Type t2  = typeof(DateTime);        // -> at compile time
-Console.WriteLine(t2);
-Console.WriteLine($"FullName: {t1.FullName}");     // -> print System.DateTime     // Namespace.TypeName
-Console.WriteLine($"Namespace: {t1.Namespace}");   // -> print System              // Namespace
-Console.WriteLine($"Name: {t1.Name}");             // -> print DateTime            // TypeName
-Console.WriteLine($"BaseType: {t1.BaseType}");     // -> print System.ValueType    // Namespace.ValueType
-Console.WriteLine($"IsPublic: {t1.IsPublic}");     // -> print True
+//Type t1 = DateTime.Now.GetType();   // -> at runtime
+//Console.WriteLine(t1);
+//Type t2  = typeof(DateTime);        // -> at compile time
+//Console.WriteLine(t2);
+//Console.WriteLine($"FullName: {t1.FullName}");     // -> print System.DateTime     // Namespace.TypeName
+//Console.WriteLine($"Namespace: {t1.Namespace}");   // -> print System              // Namespace
+//Console.WriteLine($"Name: {t1.Name}");             // -> print DateTime            // TypeName
+//Console.WriteLine($"BaseType: {t1.BaseType}");     // -> print System.ValueType    // Namespace.ValueType
+//Console.WriteLine($"IsPublic: {t1.IsPublic}");     // -> print True
 
-Type t3 = typeof(int[,]);
-Console.WriteLine($"T3 Type: {t3.Name}");     // -> print "int32[,]"
+//Type t3 = typeof(int[,]);
+//Console.WriteLine($"T3 Type: {t3.Name}");     // -> print "int32[,]"
 
-var nestedTypes = typeof(Employee).GetNestedTypes();
-for (int i = 0; i < nestedTypes.Length; i++)
-{
-    Console.WriteLine(nestedTypes[i]);
-}
+//var nestedTypes = typeof(Employee).GetNestedTypes();
+//for (int i = 0; i < nestedTypes.Length; i++)
+//{
+  //  Console.WriteLine(nestedTypes[i]);
+//}
 
-var t4 = typeof(int);
-var interfaces = t4.GetInterfaces();
-for (int i = 0;i < interfaces.Length; i++)      // -> print all interfaces;
-{
-    Console.WriteLine(interfaces[i]);
-}
+//var t4 = typeof(int);
+//var interfaces = t4.GetInterfaces();
+//for (int i = 0;i < interfaces.Length; i++)      // -> print all interfaces;
+//{
+  //  Console.WriteLine(interfaces[i]);
+//}
+
+
+int i = (int)Activator.CreateInstance(typeof(int));
+i = 3;
+DateTime dt = (DateTime)Activator.CreateInstance(typeof(DateTime), 2023, 8, 15);
+Console.WriteLine(dt);
 
 
 
