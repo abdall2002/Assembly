@@ -119,24 +119,52 @@ using System.Reflection;
 //var nestedTypes = typeof(Employee).GetNestedTypes();
 //for (int i = 0; i < nestedTypes.Length; i++)
 //{
-  //  Console.WriteLine(nestedTypes[i]);
+//  Console.WriteLine(nestedTypes[i]);
 //}
 
 //var t4 = typeof(int);
 //var interfaces = t4.GetInterfaces();
 //for (int i = 0;i < interfaces.Length; i++)      // -> print all interfaces;
 //{
-  //  Console.WriteLine(interfaces[i]);
+//  Console.WriteLine(interfaces[i]);
 //}
 
+//////////////////////////////////////////////////////
+//int i = (int)Activator.CreateInstance(typeof(int));
+//i = 3;
+//DateTime dt = (DateTime)Activator.CreateInstance(typeof(DateTime), 2023, 8, 15);
+//Console.WriteLine(dt);     // -> print 2023/18/05 12:00:00 AM;
 
-int i = (int)Activator.CreateInstance(typeof(int));
-i = 3;
-DateTime dt = (DateTime)Activator.CreateInstance(typeof(DateTime), 2023, 8, 15);
-Console.WriteLine(dt);
-
-
-
+Console.Write("Enemy: ");
+do
+{
+    var input = "ConsoleApp3."+Console.ReadLine();
+    object obj = null;
+	try
+	{
+        var aName = typeof(Program).Assembly.GetName().Name;
+        var enemy = Activator.CreateInstance("ConsoleApp3", input);
+        obj = enemy.Unwrap();
+	}
+	catch
+	{ 
+	}
+	switch (obj)
+	{
+		case Goon g:
+            Console.WriteLine(g);
+			break;
+        case Agar a:
+            Console.WriteLine(a);
+            break;
+        case Pixa p:
+            Console.WriteLine(p);
+            break;
+        default:
+            Console.WriteLine("UNKNOWN");
+            break;
+	}
+} while (true);
 
 
 
