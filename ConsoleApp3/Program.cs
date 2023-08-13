@@ -174,6 +174,24 @@ foreach (var member in members)
 {
     Console.WriteLine(member);
 }
+Console.WriteLine("FieldInfo: ");
+FieldInfo[] fields = typeof(BankAccount).GetFields(BindingFlags.NonPublic | BindingFlags.Instance);
+foreach (var field in fields)
+{
+    Console.WriteLine(field);
+}
+Console.WriteLine("PropertyInfo: ");
+PropertyInfo[] properties = typeof(BankAccount).GetProperties();
+foreach (var property in properties)
+{
+    Console.WriteLine(property);
+}
+Console.WriteLine("ConstructorInfo: ");
+ConstructorInfo[] ctors = typeof(BankAccount).GetConstructors();
+foreach (var ctor in ctors)
+{
+    Console.WriteLine(ctor);
+}
 
 static void Account_OnNegativeBalance(object sender, EventArgs e)
 {
